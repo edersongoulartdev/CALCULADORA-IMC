@@ -1,0 +1,32 @@
+/* css reset resetar/ padrões da pagina*/
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ body 
+ {
+    margin: 200px;
+    font-family:'Times New Roman', Times, serif; /* tipo de fonte*/
+    font-size: 18px; /*tamanho da fonte*/
+    color: black; /* cor do texto*/
+    background-color: rgb(255, 255, 255); /* fundo da pagina*/
+    text-align: center; /*alinhar texto ao centro*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);;
+    border-radius: 10px;  
+ }
+
+header h1
+{
+padding: 20px;
+background: linear-gradient(#ececec, #afdff3);
+color: rgb(0, 0, 0);
+text-align: center;
+border-radius: 10px;
+}
+
+footer
+{
+    padding: 40px;
+    font-size: 15px;
+}

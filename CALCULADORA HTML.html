@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <script src="CALCULADORA IMC JAVASCRIPT.js"></script>
+    <link rel="stylesheet" href="CALCULADORA IMC CSS.css">
+    
+    <!--<link> - É a tag que faz a ligação entre os arquivos-->
+    <!--rel="stylesheet" - Especifica que é um arquivo de estilos (CSS)-->
+    <!--href="CALCULADORA IMC CSS.css" - Indica o caminho/nome do arquivo CSS-->
+    
+</head>
+<body>
+    <header>
+        <h1>Calcule seu IMC agora</h1>
+    </header>
+    <div>
+    <label for="peso">Peso em quilogramas (kg): </label>
+    <!--O <label> é como uma etiqueta que você coloca do lado de um campo 
+    para dizer o que é aquele campo.-->
+
+    <input type="number" id="peso" step="0.1" min="0" placeholder="Ex: 68.5">
+    <!--type="number": Define que este campo só aceitará números-->
+    <!--id="peso": Identificador único para este campo
+    Usado no JavaScript para acessar o valor digitado (document.getElementById('peso'))-->
+    <!--step="0.1":
+    Define o incremento/decremento dos valores
+    Permite números com 1 casa decimal (ex: 68.5, 70.0)-->
+    <!--min="0": Valor mínimo permitido (não aceita números negativos)-->
+    <!--placeholder="Ex: 68.5": Texto de exemplo que aparece quando o campo está vazio-->
+    </div>
+
+    <div>  
+    <label for="altura">Altura em metros :</label>
+    <input type="number" id="altura" step="0.01" min="0" placeholder="Ex: 1.75">
+    </div>
+
+    <div id="resultado-imc">
+        <p id="resultado">Seu IMC aparecerá aqui: </p>
+        <p id="classificacao">Sua classificação aparecerá aqui</p>
+    </div>
+    
+
+    <p id="resultado"></p>
+
+    <button onclick="calcularIMC()" >Calcular</button>
+
+    <footer>
+        <p>&copy; 2025 <a href="https://www.instagram.com/ederson_goulart/" target="_blank" rel="noopener noreferrer">Ederson Goulart</a> - todos os direitos reservados.</p>
+    </footer>
+
+
+    
+</body>
+</html>
